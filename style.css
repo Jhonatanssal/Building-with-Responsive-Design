@@ -18,8 +18,110 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 1fr 70vh repeat(7, min-content);
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start]  minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-template-rows: repeat(8, min-content);
 }
 
-.
+.top-navbar {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+}
+
+.top-navbar-ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-lef-items {
+    display: flex;
+}
+
+.top-right-items {
+    display: flex;
+}
+
+.bottom-navbar {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.bottom-navbar-ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-lef-items {
+    display: flex;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.main-box {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: linear-gradient(to right bottom, rgba(44, 16, 36, 0.93), rgba(16, 25, 44, 0.93)), url(img/main-img.gif);
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 100vh;
+}
+
+.main-box-img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    height: 100vh;
+}
+
+.main-box-text-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-box-text-bottom {
+}
+
+.clock-icon {
+    width: 2vw;
+    height: 2vh;
+}
+
+.share-icon {
+    width: 2vw;
+    height: 2vh;
+}
+
+.second-box {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: linear-gradient(to right bottom, rgba(44, 16, 36, 0.93), rgba(16, 25, 44, 0.93)), url(img/second-img.png);
+    background-repeat: no-repeat;
+    width: 60vw;
+}
+
+.second-box-img {
+    width: 100%;
+    height: 100%;
+}
+
+.third-box {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-image: linear-gradient(to right bottom, rgba(44, 16, 36, 0.93), rgba(16, 25, 44, 0.93)), url(img/third-img.jpg);
+    background-repeat: no-repeat;
+    width: 60vw;
+}
+
+.third-box-img {
+    width: 100%;
+    height: 100%;
+}
