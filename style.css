@@ -19,7 +19,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: repeat(8, min-content);
+  grid-template-rows: repeat(9, min-content);
 }
 
 /* -------------------------NAVBAR--------------------- */
@@ -291,7 +291,7 @@ body {
 
 .latest-funding {
   width: 100%;
-  padding: 10rem;
+  padding: 0 10rem 10rem 10rem;
 }
 
 .latest-funding-title-box {
@@ -390,7 +390,7 @@ body {
 /* ------------------NEWS--------------------------- */
 
 .news-section {
-  padding: 10rem;
+  padding: 0 10rem 10rem 10rem;
 }
 
 .news-container {
@@ -515,4 +515,119 @@ body {
   display: inline-block;
   width: 1em;
   margin-left: -1em; 
+}
+
+/*----------------LATEST DEALS-------------------*/
+
+.latest-deals-section {
+  padding: 0 10rem 10rem 10rem;
+  grid-row: 7 / 8;
+}
+
+.latest-deals-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+}
+
+.latest-deal-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.latest-deal-img {
+  width: 100%;
+  height: 20rem;
+}
+
+.bg-1 {
+  background-image: url(img/latest-deal-1.jpg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-2 {
+  background-image: url(img/latest-deal-2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-3 {
+  background-image: url(img/latest-deal-3.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-4 {
+  background-image: url(img/latest-deal-7.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-5 {
+  background-image: url(img/latest-deal-5.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-6 {
+  background-image: url(img/latest-deal-6.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-7 {
+  background-image: url(img/latest-deal-7.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.bg-8 {
+  background-image: url(img/latest-deal-8.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.latest-deal-title {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2rem;
+}
+
+.price-div {
+  margin-top: -1rem;
+}
+
+.latest-deal-price-scrape {
+  font-size: 1.3rem;
+  text-decoration: line-through;
+  color: #aaa;
+  font-weight: 600;
+  display: inline;
+}
+
+.latest-deal-price {
+  font-size: 1.6rem;
+  font-weight: 900;
+  display: inline;
+  padding-left: 0.5rem;
+}
+
+/*--------------------FOOTER------------------*/
+
+.footer {
+  grid-row: 8 / 9;
+  background-color: gray;
+  display: grid;
+}
+
+.top-footer {
+  background-color: brown;
+}
+
+.bottom-footer {
+  background-color: cadetblue;
 }
