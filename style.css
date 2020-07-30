@@ -386,3 +386,133 @@ body {
 .change-color-gray {
   color: gray;
 }
+
+/* ------------------NEWS--------------------------- */
+
+.news-section {
+  padding: 10rem;
+}
+
+.news-container {
+  grid-row: 6 / 7;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+.news-img {
+  background-size: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 25rem;
+}
+
+.news-img-hard-fork {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(img/hard-fork.jpg);
+}
+
+.news-img-apps {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(img/apps.jpg); 
+}
+
+.news-img-gear {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(img/gear.png);
+}
+
+.news-img-tech {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(img/tech.jpg);
+}
+
+.news-img-creative {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(img/creative.jpg);
+}
+
+.news-img-podium {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(img/podium.jpg);
+}
+
+.news-img-insights {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(img/hard-fork.jpg);
+}
+
+.news-img-launch {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(img/launch.png);
+}
+
+.news-img-distract {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(img/distract.png);
+}
+
+.text-container {
+  display: flex;
+  height: 25rem;
+  flex-direction: column;
+  justify-content: end;
+  border: 1px solid black;
+  padding: 0 1rem;
+}
+
+.title-most-popular {
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.subject {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 2.5rem;
+}
+
+.latest {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff4f2;
+}
+
+.latest-title {
+  color: orangered;
+  padding: 0.8rem;
+}
+
+.latest-news-title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.latest-text {
+  font-size: 1.3rem;
+  font-weight: 900;
+  line-height: 1.8rem;
+}
+
+.latest-img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.some-latest-ul {
+  color: slategray;
+  font-size: 1.3rem;
+  padding: 1rem;
+  line-height: 1.5rem;
+  list-style: none;
+}
+
+.some-latest-li {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.some-latest-li::before {
+  content: "\2022";
+  color: orangered;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em; 
+}
