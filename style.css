@@ -336,6 +336,10 @@ body {
   grid-gap: 2vw;
 }
 
+.a-tags-latest-funding-title {
+  text-decoration: none;
+}
+
 .latest-funding-li {
   display: flex;
   align-items: center;
@@ -389,6 +393,7 @@ body {
   padding-top: 0.5rem;
   font-weight: 600;
   font-size: 1.5rem;
+  color: #000;
 }
 
 .latest-funding-round {
@@ -396,6 +401,11 @@ body {
   line-height: 0.5rem;
   color: gray;
   text-transform: uppercase;
+}
+
+.latest-funding-bottom-a {
+  text-decoration: none;
+  color: #000;
 }
 
 .latest-funding-middle {
@@ -429,6 +439,11 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
+}
+
+.news-a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .news-img {
