@@ -291,6 +291,7 @@ body {
 
 .underline:hover {
   text-decoration: underline;
+  text-decoration-color: rgba(255, 68, 0, 0.384);
 }
 
 .change-color-red:hover {
@@ -534,6 +535,11 @@ body {
   line-height: 1.8rem;
 }
 
+.latest-a {
+  text-decoration: none;
+  color: orangered;
+}
+
 .latest-img {
   width: 10rem;
   height: 10rem;
@@ -551,6 +557,11 @@ body {
 .some-latest-li {
   border-bottom: 1px solid #ddd;
   padding: 1rem 0;
+}
+
+.latest-news-li-a {
+  text-decoration: none;
+  color: slategrey;
 }
 
 .some-latest-li::before {
@@ -708,6 +719,11 @@ body {
   border-radius: 50%;
 }
 
+.footer-li-top:hover {
+  border: 2px solid #555;
+  background-color: #131313;
+}
+
 .svg-footer {
   width: 2rem;
   height: 2rem;
@@ -728,6 +744,11 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   color: #999;
+  text-decoration: none;
+}
+
+.footer-li-bottom:hover {
+  color: #eee;
 }
 
 .bottom-footer {
@@ -742,8 +763,4 @@ body {
 
 .tnw-footer-img {
   height: 1rem;
-}
-
-.stackpath {
-
 }
