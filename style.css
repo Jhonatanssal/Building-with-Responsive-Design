@@ -420,6 +420,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     height: auto;
+    grid-gap: 1rem;
   }
 }
 
@@ -521,6 +522,12 @@ body {
   .main-box-h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
+    margin-top: 9rem;
+    margin-left: -1rem;
+  }
+
+  .main-box-date {
+    display: none;
   }
 }
 
@@ -603,9 +610,11 @@ body {
 @media only screen and (max-width: 768px) {
   .second-box-h2 {
     font-size: 2.5rem;
-    line-height: 3rem;
-    margin-left: 2rem;
+    line-height: 2rem;
     font-weight: 900;
+    margin-top: 9rem;
+    margin-bottom: 0;
+    margin-left: -3rem;
   }
 }
 
@@ -623,11 +632,12 @@ body {
   .third-box {
     grid-column: 1 / 1;
     grid-row: 3 / 4;
+    margin-top: -1rem;
   }
   .second-box-h2 {
     font-size: 2.5rem;
     line-height: 3rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-weight: 900;
   }
 }
