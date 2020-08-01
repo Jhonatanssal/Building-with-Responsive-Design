@@ -45,20 +45,8 @@ body {
 
 /* -------------------------NAVBAR--------------------- */
 
-/* TESTING */
-
 .navigation__checkbox {
   display: none;
-}
-
-.navigation__button {
-  background-color: #fff;
-  height: 7rem;
-  width: 7rem;
-  top: 6rem;
-  right: 6rem;
-  text-align: center;
-  cursor: pointer; 
 }
 
 .navigation__button {
@@ -68,9 +56,7 @@ body {
   position: fixed;
   top: 0.6rem;
   right: 2rem;
-  border-radius: 50%;
   z-index: 2000;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   text-align: center;
   cursor: pointer; 
 }
@@ -78,7 +64,6 @@ body {
 @media only screen and (min-width: 768px) {
   .navigation__button {
     display: none;
-    z-index: 100000;
   }
 }
 
@@ -89,8 +74,7 @@ body {
   position: fixed;
   top: 0.7rem;
   right: 2.1rem;
-  background-image: radial-gradient(hsl(111, 55%, 64%), #28b485);
-  z-index: 1000;
+  background-image: linear-gradient(#f03e54, #ec2b4c, #d30a87, #cf0491);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); 
 }
 
@@ -111,39 +95,71 @@ body {
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
 }
 
-.navigation__list {
+.icons-navbar {
+  transform: translate(-3rem, 2rem);
+}
+
+@media only screen and (max-width: 768px) {
+  .icons-navbar  {
+    transform: translateX(1rem);
+  }
+}
+
+.icons-navbar-li {
+  background-color: #f03e54 !important;
+  margin: 4rem !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .icons-navbar-li {
+    margin: 1.5rem !important;
+  }
+  .svg-navbar {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+}
+
+.navigation__list-left {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 20%;
+  transform: translate(-20%, -50%);
   list-style: none;
-  text-align: center;
-  width: 100%; 
-  z-index: 1000000;
+  text-align: start;
+  width: 100%;
 }
 
-.navigation__item {
-  margin: 1rem; 
-  z-index: 1000000;
-
+.navigation__list-right {
+  position: absolute;
+  top: 59%;
+  left: 70%;
+  transform: translate(-20%, -50%);
+  list-style: none;
+  text-align: start;
+  width: 100%;
 }
 
-.navigation__link:link, 
-.navigation__link:visited {
+.navigation__link-left:link, 
+.navigation__link-left:visited {
   display: inline-block;
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 300;
-  padding: 1rem 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
   color: #fff;
   text-decoration: none;
 }
 
-
-.navigation__link:hover, 
-.navigation__link:active {
-  background-position: 100%;
-  color: #55c57a;
-  transform: translateX(1rem); 
+.navigation__link-right:link, 
+.navigation__link-right:visited {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-left: 2rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+  text-decoration: none;
 }
 
 .navigation__checkbox:checked ~ 
@@ -156,7 +172,6 @@ body {
   opacity: 1;
   width: 100%; 
 }
-
 
 .navigation__icon {
   position: relative;
@@ -177,7 +192,7 @@ body {
     background-color: #333;
     display: inline-block;
     transition: all .2s;
-    z-index: 10000000;
+    z-index: 9999;
   }
 
 .navigation__icon::before, 
@@ -207,13 +222,11 @@ body {
 }
 
 .navigation__checkbox:checked + 
-.navigation__button .navigation__icon::after {
+.navigation__button 
+.navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); 
 }
-
-
-/*END OF TESTING */
 
 .logo-small-container {
   display: none;
@@ -223,6 +236,20 @@ body {
   top: 0;
   left: 0;
   position: absolute;
+  z-index: 99999;
+}
+
+@media only screen and (max-width: 1024px) {
+  .logo-small-container {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-small-container {
+    height: 5rem;
+    z-index: 0;
+  }
 }
 
 .tnw-img-small {
@@ -232,15 +259,10 @@ body {
   z-index: 9999;
 }
 
-@media only screen and (max-width: 1024px) {
-  .tnw-img-small {
-    height: 75%;
-  }
-}
-
 @media only screen and (max-width: 768px) {
-  .logo-small-container {
-    display: inline-block;
+  .tnw-img-small {
+    height: 120%;
+    z-index: 0;
   }
 }
 
@@ -347,6 +369,7 @@ body {
 @media only screen and (max-width: 768px) {
   .bottom-navbar-ul {
     justify-content: space-between;
+    text-transform: capitalize;
   }
 }
 
@@ -544,6 +567,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .main-box-author {
+    font-size: 1.2rem;
+  }
+}
+
 .clock-icon {
   width: 2vw;
   height: 2vh;
@@ -609,12 +638,15 @@ body {
 
 @media only screen and (max-width: 768px) {
   .second-box-h2 {
-    font-size: 2.5rem;
+    font-size: 2rem !important;
     line-height: 2rem;
     font-weight: 900;
     margin-top: 9rem;
     margin-bottom: 0;
     margin-left: -3rem;
+  }
+  .second-box-h2-mq {
+    padding-top: 0;
   }
 }
 
