@@ -415,6 +415,14 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: auto;
+  }
+}
+
 .a-tags-header-img {
   text-decoration: none;
 }
@@ -428,6 +436,16 @@ body {
   width: 100%;
   height: 100%;
   transition: all 0.8s ease-out;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .main-box {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    height: 18rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -499,6 +517,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .main-box-h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+
 .main-box-author {
   font-size: 100%;
   padding-left: 2%;
@@ -534,6 +559,13 @@ body {
   transition: all 0.8s ease;
 }
 
+@media only screen and (max-width: 768px) {
+  .second-box {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .second-box {
     height: 23vh;
@@ -562,10 +594,18 @@ body {
 @media only screen and (max-width: 1024px) {
   .second-box-h2 {
     font-size: 1.4rem;
-    line-height: 2rem;
   }
   .second-box-h2-mq {
     padding-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .second-box-h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+    font-weight: 900;
   }
 }
 
@@ -577,6 +617,19 @@ body {
   background-size: 100%;
   width: 100%;
   transition: all 0.8s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .third-box {
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+  }
+  .second-box-h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-left: 2rem;
+    font-weight: 900;
+  }
 }
 
 .third-box:hover {
@@ -668,11 +721,41 @@ body {
 .latest-news-author {
   font-size: 1.3rem;
   color: gray;
+  font-weight: 100;
 }
 
 .latest-news-time {
   font-size: 1.2rem;
   color: gray;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 768px) {
+  .latest-news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .latest-news-box {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .latest-news-img {
+    object-fit: cover;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .a-tags-latest-news {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .latest-box-text {
+    margin-left: 1rem;
+  }
 }
 
 /* -----------------------------LATEST FUNDING------------------------------- */
@@ -739,7 +822,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 7vw;
+  height: 10rem;
 }
 
 .latest-funding-img {
@@ -820,7 +903,6 @@ body {
     display: inline;
     height: 10vh;
     margin-top: rem;
-    border: 1px solid black;
     margin-left: 1rem;
   }  
 
@@ -835,6 +917,64 @@ body {
     align-items: center;
     margin-top: -1rem;
     margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .titles {
+    font-size: 3.5rem;
+    font-weight: 950;
+  }
+
+  .latest-funding-li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .latest-funding-item {
+    font-size: 1.8rem;
+  }
+
+  .latest-funding-box-container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .latest-funding-title {
+    height: 13rem;
+  }
+
+  .latest-funding-img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .stock {
+    font-size: 2.5rem;
+  }
+
+  .latest-funding-amount {
+    font-size: 2rem;
+  }
+
+  .latest-funding-round {
+    font-size: 1.2rem;
+  }
+
+  .subjec {
+    font-size: 1.5rem;
+    color: #ddd;
+  }
+
+  .investor {
+    font-size: 1.5rem;
+  }
+
+  .latest-funding-bottom-a {
+    font-size: 1.5rem;
+    color: #777;
   }
 }
 
@@ -877,6 +1017,7 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   height: 25rem;
+  border: 1px solid black;
 }
 
 .news-img-hard-fork {
@@ -921,7 +1062,6 @@ body {
   flex-direction: column;
   justify-content: end;
   padding: 0 1rem;
-  border: 1px solid black;
   padding-top: 14rem;
 }
 
@@ -947,6 +1087,7 @@ body {
 
 .latest {
   display: flex;
+  width: 100%;
   align-items: flex-start;
   background-color: #fff4f2;
 }
@@ -1003,6 +1144,67 @@ body {
   display: inline-block;
   width: 1em;
   margin-left: -1em; 
+}
+
+@media only screen and (max-width: 768px) {
+  .news-container {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(9, 1fr);
+  }
+
+  .text-container {
+    border: 1px solid black;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .news-img {
+    height: 60rem;
+  }
+
+  .title-most-popular {
+    font-size: 1.7rem;
+  }
+
+  .subject {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .author {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .latest {
+    justify-content: space-between;
+    height: 12rem;
+  }
+
+  .latest-img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .latest-title {
+    margin-left: 1rem;
+  }
+
+  .latest-news-title {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 1rem auto;
+  }
+
+  .latest-text {
+    font-size: 2rem;
+  }
+
+  .latest-news-li-a {
+    font-size: 1.7rem;
+  }
 }
 
 /*----------------LATEST DEALS-------------------*/
@@ -1113,6 +1315,44 @@ body {
   padding-left: 0.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .latest-deals-container {
+    grid-template-columns: 100%;
+    grid-gap: 1.5rem;
+  }
+
+  .latest-deal-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 9rem;
+  }
+
+  .latest-deal-img {
+    object-fit: cover;
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .a-tags-latest-news {
+    margin: 0.5rem 1.5rem;
+  }
+
+  .latest-deal-title {
+    font-size: 1.8rem;
+  }
+
+  .latest-deal-price-scrape {
+    font-size: 1.5rem;
+    font-weight: 50;
+  }
+
+  .latest-deal-price {
+    font-size: 1.6rem;
+    font-weight: 50;
+  }
+}
+
 /*--------------------FOOTER------------------*/
 
 .footer {
@@ -1195,4 +1435,37 @@ body {
 
 .tnw-footer-img {
   height: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .top-footer {
+    height: 20rem;
+  }
+
+  .bottom-footer {
+    height: 15rem;
+  }
+  
+  .footer-li-top {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.5rem;
+  }
+
+  .svg-footer {
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-top: 0.5rem;
+  }
+
+  .footer-li-bottom {
+    font-size: 1.5rem;
+  }
+
+  .bottom-text {
+    margin: 3rem 32%;
+    text-align: center;
+    font-size: 1.6rem;
+  }
 }
