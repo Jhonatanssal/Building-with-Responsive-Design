@@ -797,6 +797,17 @@ body {
 
   .latest-box-text {
     margin-left: 1rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .latest-news-author {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+  }
+
+  .latest-news-time {
+    font-size: 1.6rem;
   }
 }
 
@@ -1059,7 +1070,6 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   height: 25rem;
-  border: 1px solid black;
 }
 
 .news-img-hard-fork {
@@ -1195,7 +1205,6 @@ body {
   }
 
   .text-container {
-    border: 1px solid black;
     height: 60rem;
     display: flex;
     flex-direction: column;
