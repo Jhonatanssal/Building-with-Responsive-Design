@@ -30,8 +30,7 @@ Building an HTML and css page that matches the appearance of this page [TNW](htt
 ### Jose Abel
 
 - Github: [@jose-Abel](https://github.com/jose-Abel)
-- Twitter: []()
-- Linkedin: []()
+- Linkedin: [](https://www.linkedin.com/in/jose-abel-ramirez-frontany-7674a842/)
 
 # Contributing
 
