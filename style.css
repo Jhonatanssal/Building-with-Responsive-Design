@@ -462,107 +462,6 @@ body {
 
 /* -----------------------------HEADER---------------------- */
 
-@media only screen and (min-width: 768px) {
-  .header {
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    height: 50vh;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .main-box {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .main-box-h2 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    margin-top: 9rem;
-    margin-left: -1rem;
-  }
-
-  .main-box-date {
-    display: block;
-    font-size: 1.5rem;
-    padding: 2.5%;
-    font-weight: 100;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .second-box {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    height: 30vh;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .second-box-h2 {
-    font-size: 2.5rem !important;
-    line-height: 3rem;
-    margin-top: 9rem;
-    margin-bottom: 2rem;
-    margin-left: -2rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .third-box {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .header {
-    height: 76vh;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .main-box {
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(img/main-img.png);
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .main-box-date {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .main-box-h2 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .main-box-author {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .second-box {
-    height: 23vh;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .second-box-h2 {
-    font-size: 1.4rem;
-    margin-bottom: 0;
-  }
-}
-
 .header {
   display: grid;
   grid-row: 3 / 4;
@@ -585,7 +484,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 100%;
+  height: 20vh;
   transition: all 0.8s ease-out;
 }
 
@@ -647,9 +546,10 @@ body {
 }
 
 .clock-icon {
-  width: 2vw;
-  height: 2vh;
+  width: 1.5vw;
+  height: 1.5vh;
   fill: #fff;
+  margin: 0 0.5rem;
 }
 
 .share-icon {
@@ -666,7 +566,7 @@ body {
   background-size: 100%;
   width: 100%;
   transition: all 0.8s ease;
-  height: 40vh;
+  height: 20vh;
 }
 
 .second-box:hover {
@@ -703,6 +603,114 @@ body {
   height: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  .header {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 35vh;
+    border: 1px solid black;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-box {
+    height: 33.5vh;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border: 1px solid black;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .main-box-h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-top: 9rem;
+    margin-left: -1rem;
+  }
+
+  .main-box-date {
+    display: block;
+    font-size: 1.5rem;
+    padding: 2.5%;
+    font-weight: 100;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .second-box {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 16.5vh;
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .second-box-h2 {
+    font-size: 2.3rem !important;
+    line-height: 3rem;
+    margin-left: 1rem;
+  }
+
+  .header-svg {
+    width: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .third-box {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    height: 76vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-box {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(img/main-img.png);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-box-date {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-box-h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main-box-author {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .second-box {
+    height: 23vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .second-box-h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+}
+
 /* -----------------LATEST NEWS----------------------- */
 
 .latest-news-section {
@@ -711,6 +719,16 @@ body {
   align-items: flex-start;
   padding: 10rem 3rem;
   grid-row: 4 / 5;
+}
+
+@media only screen and (min-width: 768px) {
+  .latest-news-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6vw 6vw;
+    grid-row: 4 / 5;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -747,44 +765,9 @@ body {
   flex-direction: row;
 }
 
-@media only screen and (min-width: 768px) {
-  .latest-news-container {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2vw;
-  }
-
-  .latest-news-img {
-    width: 100%;
-  }
-
-  .a-tags-latest-news {
-    text-decoration: none;
-    color: black;
-  }
-
-  .latest-box-text {
-    margin-left: 1rem;
-    font-size: 1.5rem;
-    font-weight: 900;
-    line-height: 2rem;
-  }
-
-  .latest-news-author {
-    font-size: 1.3rem;
-    margin-top: 0;
-  }
-
-  .latest-news-time {
-    font-size: 1.2rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .latest-news-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.a-tags-latest-news {
+  text-decoration: none;
+  color: black;  
 }
 
 .a-tags-latest-news {
@@ -830,47 +813,58 @@ body {
   font-weight: 100;
 }
 
+@media only screen and (min-width: 768px) {
+  .latest-news-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2vw;
+  }
+
+  .latest-news-box {
+    height: 30rem;
+  }
+
+  .a-tags-latest-news {
+    display: grid;
+    grid-template-rows: 2fr 1fr;  
+    width: 100%; 
+  }
+
+  .latest-news-img {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .latest-box-text {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 2rem;
+    margin-top: -2rem;
+  }
+
+  .latest-news-author {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+
+  .latest-news-time {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .latest-news-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 /* -----------------------------LATEST FUNDING------------------------------- */
 
-@media only screen and (min-width: 768px) {
-  .latest-funding-li {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .latest-funding-item {
-    font-size: 1.6rem;
-  }
-
-  .latest-funding-box-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-  }
-
-  .latest-funding-title {
-    height: 10rem;
-  }
-
-  .latest-funding-img {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  .stock {
-    font-size: 1.8rem;
-  }
-
-  .latest-funding-amount {
-    font-size: 1.5rem;
-  }
-
-  .latest-funding-round {
-    font-size: 1rem;
-  }
-
-  .latest-funding-bottom-a {
-    color: #000;
-  }
+.latest-funding-img {
+  width: 10rem;
+  height: 10rem;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1051,78 +1045,45 @@ body {
   color: gray;
 }
 
-/* ------------------NEWS--------------------------- */
-
 @media only screen and (min-width: 768px) {
-  .news-container {
+  .latest-funding-li {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .latest-funding-item {
+    font-size: 1.6rem;
+  }
+
+  .latest-funding-box-container {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    border: 2px solid red;
   }
 
-  .text-container {
-    height: 25rem;
-  }
-
-  .news-img {
-    height: 25rem;
-  }
-
-  .title-most-popular {
-    font-size: 1.2rem;
-  }
-
-  .subject {
-    font-size: 2rem;
-    margin-bottom: 0;
-  }
-
-  .latest {
-    justify-content: flex-start;
-    height: 100%;
-  }
-
-  .latest-img {
-    width: 10rem;
+  .latest-funding-title {
     height: 10rem;
   }
 
-  .latest-title {
-    margin-left: 0;
+  .stock {
+    font-size: 1.8rem;
   }
 
-  .latest-news-title {
-    font-size: 1.3rem;
-    font-weight: 100;
-    margin: 0;
+  .latest-funding-amount {
+    font-size: 1.5rem;
   }
 
-  .latest-text {
-    font-size: 1.3rem;
-  }
-
-  .latest-news-li-a {
+  .latest-funding-round {
     font-size: 1rem;
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  .news-section {
-    padding: 0 2rem 10rem 2rem;
+  .latest-funding-bottom-a {
+    color: #000;
   }
 }
 
-@media only screen and (min-width: 1024px) {
-  .news-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .text-container {
-    padding-top: 13rem;
-  }
-}
+/* ------------------NEWS--------------------------- */
 
 .news-section {
   padding: 0 10rem 10rem 10rem;
@@ -1145,7 +1106,7 @@ body {
   background-size: 100%;
   width: 100%;
   background-repeat: no-repeat;
-  height: 60rem;
+  height: 40rem;
 }
 
 .news-img-hard-fork {
@@ -1186,7 +1147,7 @@ body {
 
 .text-container {
   display: flex;
-  height: 60rem;
+  height: 40rem;
   flex-direction: column;
   justify-content: end;
   padding: 0 1rem;
@@ -1275,51 +1236,83 @@ body {
   margin-left: -1em;
 }
 
-/* ----------------LATEST DEALS------------------- */
-
 @media only screen and (min-width: 768px) {
-  .latest-deals-container {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2rem;
+  .news-container {
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 
-  .latest-deal-box {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  .text-container {
+    height: 25rem;
   }
 
-  .latest-deal-img {
-    width: 100%;
-    height: 15rem;
-    object-fit: fill;
+  .news-img {
+    height: 25rem;
   }
 
-  .latest-deal-title {
-    font-size: 1.5rem;
+  .title-most-popular {
+    font-size: 1.2rem;
   }
 
-  .latest-deal-price-scrape {
+  .subject {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  .latest {
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .latest-img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .latest-title {
+    margin-left: 0;
+  }
+
+  .latest-news-title {
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 100;
+    margin: 0;
   }
 
-  .latest-deal-price {
-    font-weight: 900;
+  .latest-text {
+    font-size: 1.3rem;
+  }
+
+  .latest-news-li-a {
+    font-size: 1rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: slategrey;
+    z-index: 100;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .latest-deals-section {
+  .news-section {
     padding: 0 2rem 10rem 2rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .latest-deals-container {
-    grid-template-columns: repeat(3, 1fr);
+  .news-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  .text-container {
+    padding-top: 13rem;
+  }
+}
+
+/* ----------------LATEST DEALS------------------- */
 
 .latest-deals-section {
   padding: 0 10rem 10rem 10rem;
@@ -1342,9 +1335,8 @@ body {
 }
 
 .latest-deal-img {
+  width: 10rem;
   object-fit: cover;
-  width: 12rem;
-  height: 12rem;
 }
 
 .bg-1 {
@@ -1419,6 +1411,50 @@ body {
   font-weight: 50;
   display: inline;
   padding-left: 0.5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .latest-deals-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .latest-deal-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .latest-deal-img {
+    width: 100%;
+    height: 12rem;
+    object-fit: fill;
+  }
+
+  .latest-deal-title {
+    font-size: 1.5rem;
+  }
+
+  .latest-deal-price-scrape {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .latest-deal-price {
+    font-weight: 900;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .latest-deals-section {
+    padding: 0 2rem 10rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .latest-deals-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* --------------------FOOTER------------------ */
