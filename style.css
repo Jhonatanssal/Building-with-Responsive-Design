@@ -372,7 +372,6 @@ body {
   display: none;
 }
 
-
 .main-box-text-bottom {
   padding: 0 2%;
 }
@@ -459,7 +458,8 @@ body {
 
 .titles {
   margin-bottom: 2rem;
-  font-size: 3vw;
+  font-size: 3.5rem;
+  font-weight: 950;
   color: orangered;
 }
 
@@ -471,7 +471,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
 }
 
 .latest-news-box {
@@ -484,6 +483,7 @@ body {
   color: black;
   display: flex;
   flex-direction: row;
+  margin: 0.5rem 1.5rem;
 }
 
 .latest-news-img {
@@ -530,6 +530,8 @@ body {
 .latest-funding-img {
   width: 10rem;
   height: 10rem;
+  display: inline;
+  margin-left: 1rem;
 }
 
 .latest-funding {
@@ -587,11 +589,6 @@ body {
   height: 13rem;
 }
 
-.latest-funding-img {
-  display: inline;
-  margin-left: 1rem;
-}
-
 .latest-funding-text-box {
   display: flex;
   flex-direction: column;
@@ -635,7 +632,6 @@ body {
   text-decoration: none;
   color: #777;
   font-size: 1.5rem;
-
 }
 
 .latest-funding-middle {
@@ -669,11 +665,6 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: repeat(9, 1fr);
   grid-gap: 2rem;
-}
-
-.titles {
-  font-size: 3.5rem;
-  font-weight: 950;
 }
 
 .news-a {
@@ -899,10 +890,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.a-tags-latest-news {
-  margin: 0.5rem 1.5rem;
-}
-
 .latest-deal-title {
   text-transform: capitalize;
   font-size: 1.8rem;
@@ -939,7 +926,6 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   height: 20rem;
-
 }
 
 .footer-ul-top {
@@ -1062,7 +1048,7 @@ body {
     z-index: 9999;
   }
 
-  .tnw-img-small-2{
+  .tnw-img-small-2 {
     height: 5rem;
     z-index: 9999;
   }
@@ -1165,8 +1151,8 @@ body {
 
   .a-tags-latest-news {
     display: grid;
-    grid-template-rows: 2fr 1fr;  
-    width: 100%; 
+    grid-template-rows: 2fr 1fr;
+    width: 100%;
   }
 
   .latest-news-img {
@@ -1288,7 +1274,7 @@ body {
   }
 
   .latest-text {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .latest-news-li-a {
@@ -1388,7 +1374,7 @@ body {
     width: 56%;
     padding: 3%;
   }
-  
+
   .header {
     height: 76vh;
   }
@@ -1423,6 +1409,7 @@ body {
 
   .titles {
     font-size: 2vw;
+    padding-bottom: 2rem;
   }
 
   .latest-news-container {
@@ -1440,8 +1427,14 @@ body {
   }
 
   .a-tags-latest-news {
-    margin: 0 -10rem;
-    width: rem;
+    margin-right: -10rem;
+    padding-left: 0;
+  }
+
+
+
+  .a-tags-latest-news {
+
   }
 
   .latest-news-img {
@@ -1533,10 +1526,6 @@ body {
     padding: 0 7rem 10rem 7rem;
   }
 
-  .titles {
-    padding-bottom: 2rem;
-  }
-
   .news-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -1597,10 +1586,5 @@ body {
 
   .latest-deal-img {
     height: 20rem;
-  }
-
-  .a-tags-latest-news {
-    padding-left: 0;
-    margin-left: 0;
   }
 }
