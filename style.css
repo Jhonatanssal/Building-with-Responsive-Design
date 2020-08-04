@@ -574,6 +574,11 @@ body {
   font-size: 1.8rem;
   margin-right: 1vw;
   color: orangered;
+  padding: 0.8rem;
+}
+
+.latest-funding-item-3 {
+  margin-bottom: 1.5rem;
 }
 
 .latest-funding-box {
@@ -984,7 +989,6 @@ body {
   display: flex;
   justify-content: center;
   height: 15rem;
-  height: 9rem;
   align-items: center;
   background-color: #000;
   color: #fff;
@@ -996,7 +1000,7 @@ body {
 }
 
 .bottom-text {
-  margin: 3rem 32%;
+  margin: 0 32%;
   text-align: center;
   font-size: 1.6rem;
 }
@@ -1193,11 +1197,12 @@ body {
   .latest-funding-item {
     font-size: 1.6rem;
     border-right: 1px solid orangered;
-    padding-right: 1rem;
+    padding: 0.2rem 1rem 0.2rem 0;
+    margin-bottom: 1.5rem;
   }
 
-  .border-right {
-    border: none;
+  .latest-funding-item-3 {
+    border-right: none;
   }
 
   .latest-funding-box-container {
@@ -1492,8 +1497,17 @@ body {
     align-items: center;
   }
 
-  .border-right {
+  .latest-funding-item-1 {
+    order: 3;
     border: none;
+  }
+
+  .latest-funding-item-2 {
+    order: 2;
+  }
+
+  .latest-funding-item-3 {
+    order: 1;
   }
 
   .stock {
