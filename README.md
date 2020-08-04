@@ -15,7 +15,7 @@ Building an HTML and css page that matches the appearance of this page [TNW](htt
 
 # Live Demo
 
-[Click here for Live Demo](https://raw.githack.com/jssarrazolaa/Building-with-Responsive-Design/workplace/index.html)
+[Click here for Live Demo](https://jssarrazolaa.github.io/Building-with-Responsive-Design)
 
 # Getting Started
 
